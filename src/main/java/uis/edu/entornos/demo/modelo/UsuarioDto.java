@@ -15,6 +15,8 @@ public class UsuarioDto {
     private String apellido;
 
     private String contrasena;
+    
+    private Boolean es_admin;
 
     public Long getUsuarioID() {
         return usuarioID;
@@ -56,4 +58,12 @@ public class UsuarioDto {
         this.contrasena = contrasena;
     }
 
+    public Boolean getEs_admin() {
+        return es_admin;
+    }
+
+    public void setEs_admin(Boolean es_admin) {
+        this.es_admin = es_admin;
+    }
+    
 }

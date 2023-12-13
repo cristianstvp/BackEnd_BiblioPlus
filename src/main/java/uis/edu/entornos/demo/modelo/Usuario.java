@@ -36,15 +36,19 @@ public class Usuario {
     @Column(name = "contrasena")
     private String contrasena;
     
+    @Column(name = "es_admin")
+    private Boolean es_admin;
+    
     public Usuario(){
     }
 
-    public Usuario(int usuarioID, String nombreUsuario, String primerNombre, String apellido, String contrasena) {
+    public Usuario(int usuarioID, String nombreUsuario, String primerNombre, String apellido, String contrasena, Boolean es_admin) {
         this.usuarioID = usuarioID;
         this.nombre_usuario = nombreUsuario;
         this.primer_nombre = primerNombre;
         this.apellido = apellido;
         this.contrasena = contrasena;
+        this.es_admin = es_admin;
     }
     
     // Getter y Setter
@@ -88,4 +92,13 @@ public class Usuario {
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
+
+    public Boolean getEs_admin() {
+        return es_admin;
+    }
+
+    public void setEs_admin(Boolean es_admin) {
+        this.es_admin = es_admin;
+    }
+    
 }

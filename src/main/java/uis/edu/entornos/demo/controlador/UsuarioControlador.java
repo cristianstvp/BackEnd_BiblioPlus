@@ -57,6 +57,7 @@ public class UsuarioControlador {
             obj.setPrimerNombre(usuario.getPrimerNombre()); // Cambiar a primerNombre
             obj.setApellido(usuario.getApellido());
             obj.setContrasena(usuario.getContrasena());
+            obj.setEs_admin(usuario.getEs_admin());
             usuarioServicio.nuevoUsuario(obj);
             return new ResponseEntity<>(obj, HttpStatus.OK);
         } else {
